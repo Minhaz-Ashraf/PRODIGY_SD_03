@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    
+    width: 100%;
+    height: 87vh;
+    background-color: rgb(14, 13, 13);
+}
+h1{
+    text-align: center;
+    padding-top: 29px;
+    color: #fff;
+}
+tbody, th, td{
+    border: 1px solid #fff ;
+    color: #fff;
+}   
+table{
+    width: 70%;
+    margin: 5% 0 0 15%;
+}
+td{
+    text-align: center;
+}
+ 
+
+ /* buttons */
+ button {
+    margin: 5px 8px 8px 0;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #a29bfe;
+  }
+  button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #a29bfe;
+  }
+ .del{
+     background-color: red;
+  }
+  .upd{
+    background-color: rgb(0, 128, 32);
+  }
+  .shadow__btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 13px;
+    color: black;
+    border-radius: 7px;
+    font-weight: 600;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+  
+  .shadow__btn {
+    background: yellow;
+    box-shadow: 0 0 25px yellow;
+  }
+  
+  .shadow__btn:hover {
+    box-shadow: 0 0 5px  yellow,
+                0 0 25px  yellow,
+                0 0 50px  yellow,
+                0 0 100px yellow;
+  }

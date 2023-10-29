@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background-color: rgb(26, 26, 26);
+  }
+
+  .container{
+    width: 800px;
+    height: 55vh;
+    margin: 6% 0 0 21%;
+    padding:  50px 0 0 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    border-radius: 25px;
+  }
+  
+  .img{
+    width: 120px;
+  }
+  .img img{
+  width: 500px;
+  margin-left: 120px;
+  
+  }
+  /* input */
+  
+  .form__group {
+    position: relative;
+    margin:  22px 0 0 50px;
+    padding: 30px 0 0;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 200%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, rgb(128, 124, 2), rgb(216, 216, 2));
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: yellow;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+    /* button */
+    .shadow__btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      border: none;
+      font-size: 13px;
+      color: black;
+      border-radius: 7px;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: 0.5s;
+      transition-property: box-shadow;
+    }
+    
+    .shadow__btn {
+      background: yellow;
+      box-shadow: 0 0 25px yellow;
+    }
+    
+    .shadow__btn:hover {
+      box-shadow: 0 0 5px  yellow,
+                  0 0 25px  yellow,
+                  0 0 50px  yellow,
+                  0 0 100px yellow;
+    }
